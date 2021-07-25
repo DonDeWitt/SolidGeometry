@@ -5,7 +5,8 @@ def getCubeArea(height):
         raise TypeError("The height must be a non-negative real number.")
     if height < 0:
         raise ValueError("The height must be positive")
-    return (6 * height ** 2)
+    return (6 * height ** 2) + 1
+    #This is intentionally wrong to test CircleCI unittesting
 
 def getCubeVolume(height):
     if type(height) not in [int, float]:
